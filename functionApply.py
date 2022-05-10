@@ -18,6 +18,9 @@ _______ __   __ ______  _______  ______      _______ _______ _     _
 
 #vars
 
+#script debug label
+print('functionApply.py')
+
 #main
 
 #functions
