@@ -14,15 +14,15 @@ _______ __   __ ______  _______  ______      _______ _______ _     _
 #ppchung@gmx.com
 #562-480-2114
 
-#---imports---
+'''---imports---'''
 import ezdxf
 
-#---vars---
+'''---vars---'''
 
-#---script debug label---
-print('functionApply.py')
+'''---script debug label---'''
+print('\ndebug: functionApply.py\n')
 
-#---main---
+'''---main---'''
 
 #   make new DXF files
 drawing01 = ezdxf.new()
@@ -33,9 +33,9 @@ drawing01.header['$INSUNITS'] = 1
 
 modelSpace = drawing01.modelspace()
 
-points = [(0, 0), (3, 0), (6, 3), (6, 6)]
-modelSpace.add_lwpolyline(points)
+points01 = [(0, 0), (3, 0), (3, 3), (0, 3), (0, 0)]
+modelSpace.add_lwpolyline(points01)
 
 drawing01.saveas("lwpolyline1.dxf")
 
-#---functions---s
+'''---functions---'''

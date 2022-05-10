@@ -1,0 +1,4 @@
+Common Building features
+- columns can either be certain distances in either horizontal or vertical
+  - column spacing (horizontal)
+    - 
