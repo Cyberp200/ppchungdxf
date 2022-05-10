@@ -14,13 +14,13 @@ _______ __   __ ______  _______  ______      _______ _______ _     _
 #ppchung@gmx.com
 #562-480-2114
 
-#imports
+#---imports---
 
-#vars
+#---vars---
 
-#script debug label
+#---script debug label---
 *use whatever language console debug print fn*
 
-#main
+#---main---
 
-#functions
+#---functions---

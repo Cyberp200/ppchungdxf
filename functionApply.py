@@ -14,13 +14,28 @@ _______ __   __ ______  _______  ______      _______ _______ _     _
 #ppchung@gmx.com
 #562-480-2114
 
-#imports
+#---imports---
+import ezdxf
 
-#vars
+#---vars---
 
-#script debug label
+#---script debug label---
 print('functionApply.py')
 
-#main
+#---main---
 
-#functions
+#   make new DXF files
+drawing01 = ezdxf.new()
+
+#   set the units
+#       0 Unitless, 1 In, 2 Ft, 4 mm
+drawing01.header['$INSUNITS'] = 1
+
+modelSpace = drawing01.modelspace()
+
+points = [(0, 0), (3, 0), (6, 3), (6, 6)]
+modelSpace.add_lwpolyline(points)
+
+drawing01.saveas("lwpolyline1.dxf")
+
+#---functions---s
